@@ -1,0 +1,260 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    background: rgb(226, 226, 226);
+  }
+
+  h1 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+  }
+  
+  .sidebar {
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    left: 0;
+    width: 75px;
+    background: #2f3542;
+    overflow: hidden;
+    transition: 1s;
+
+  }
+  
+  .sidebar:hover {
+    width: 240px;
+    transition: 1s;
+  }
+
+  .sidebar .nav-link img {
+    width: 55px;
+    height: 45px;
+    margin-right: 10px;
+    
+  }
+  
+  .brand {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 4rem;
+  }
+  
+  .brand img {
+    width: 55px;
+    height: 45px;
+    border-radius: 50%;
+  }
+  
+  .brand span {
+    font-weight: bold;
+    padding-left: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  
+  .nav-link {
+    position: relative;
+    width: 200px;
+    font-size: 22px;
+    color: #ddf1d0;
+    display: table;    
+    margin-bottom: 30px;
+  }
+  
+  
+  .nav-item {
+    position: relative;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .nav-link:hover {
+    background: #57606f;
+  }
+  
+  .nav-link:hover i {
+    color: #34af6d;
+    transition: 0.5s;
+  }
+  
+  .logout {
+    position: absolute;
+    bottom: 2;
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  /* Main Section */
+  .main {
+    position: relative;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  .main-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    margin-bottom: 10px;
+  }
+  
+  .main-top i {
+    position: absolute;
+    right: 0;
+    margin: 10px 30px;
+    color: #caccd3;
+    cursor: pointer;
+  }
+  
+  .main .items {
+    display: flex;
+    width: 100%;
+  }
+
+  .main-image{
+    width: 30px;
+    margin-left: 10px;
+  }
+  
+  .items .card {
+    width: 25%;
+    margin: 10px;
+    background: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+  }
+  
+  .items .card img {
+    width: 70px;
+    height: 70px;
+    border-radius: 20%;
+  }
+  
+  .items .card h4 {
+    text-transform: uppercase;
+  }
+  
+  .items .card p {
+    font-size: 12px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+  
+  .items table {
+    margin: auto;
+  }
+  
+  .items .per span {
+    padding: 5px;
+    border-radius: 10px;
+    background: rgb(223, 223, 223);
+  }
+  
+  .items td {
+    font-size: 14px;
+    padding-right: 15px;
+  }
+  
+  .items .card button {
+    width: 100%;
+    margin-top: 8px;
+    padding: 7px;
+    cursor: pointer;
+    border-radius: 10px;
+    background: transparent;
+    border: 1px solid #4ad489;
+    color: #4ad489;
+  }
+  
+  .items .card button:hover {
+    background: #4ad489;
+    color: #fff;
+    transition: 0.5s;
+  }
+  
+  /* Order List Section */
+  .order {
+    margin-top: 20px;
+    text-transform: capitalize;
+  }
+  
+  .order-list {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+  }
+  
+  .table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 15px;
+    min-width: 100%;
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  table thead tr {
+    color: #fff;
+    background: rgb(95, 195, 221);
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  .table th,
+  .table td {
+    padding: 12px 15px;
+  }
+  
+  .table tbody tr {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .table tbody tr:nth-of-type(odd) {
+    background: #f3f3f3;
+  }
+  
+  .table tbody tr.active {
+    font-weight: bold;
+    color: #4ad489;
+  }
+  
+  .table tbody tr:last-of-type {
+    border-bottom: 2px solid rgb(95, 195, 221);
+  }
+  
+  .table button {
+    padding: 6px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #ef986c;
+    color: #ea8847;
+  }
+  
+  .table button:hover {
+    background: #4ad489;
+    color: #fff;
+    transition: 0.5rem;
+  }
